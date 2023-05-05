@@ -1,0 +1,77 @@
+[
+    {
+        "query":
+            {
+            "q":["highway to hell"],
+            "type":"music",
+            "limit": 2
+            },
+        "expected": 
+            {
+                "status": 200,
+                "format": "application/json",
+                "type": "music",
+                "limit": 2
+            }
+    },
+    {
+        "query":
+            {
+            "q":["Gardiens de la galaxie"],
+            "type":"movies",
+            "limit": 5
+            },
+        "expected": 
+            {
+                "status": 200,
+                "format": "application/json",
+                "type": "movie",
+                "limit": 5
+            }
+    },
+    {
+        "query":
+            {
+            "q":["tolkien", "acdc"],
+            "type":"shows",
+            "limit": 1
+            },
+        "expected": 
+            {
+                "status": 200,
+                "format": "application/json",
+                "type": "show",
+                "limit": 1
+            }
+    },
+    {
+        "query":
+            {
+            "q":["jules verne"],
+            "type":"author",
+            "limit": 565
+            },
+        "expected": 
+            {
+                "status": 200,
+                "format": "application/json",
+                "type": "author",
+                "limit": 565
+            }
+    },
+    {
+        "query":
+            {
+            "q":["1234"],
+            "type":"number",
+            "limit": 20
+            },
+        "expected": 
+            {
+                "status": 200,
+                "format": "application/json",
+                "type": "number",
+                "limit": 20
+            }
+    }
+]

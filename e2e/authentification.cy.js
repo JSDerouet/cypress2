@@ -4,4 +4,5 @@ it('authentification', () => {
     cy.get('#signin-email').type("i.d@gmail.com");
     cy.get('#signin-password').type("hbfgsFS54");
     cy.get('[data-qa="signin-submit-button"]').click();
+    cy.url().should('include', 'dashboard')
   })
